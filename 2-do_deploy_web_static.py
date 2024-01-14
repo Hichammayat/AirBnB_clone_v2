@@ -7,6 +7,8 @@ archive to the web servers
 from fabric.api import put, run, env
 from os.path import exists
 env.hosts = ['23.23.72.217', '52.91.148.196']
+env.user = 'ubuntu'
+env.key_filename = 'C:/Users/Hp/.ssh/id_rsa'
 
 
 def do_deploy(archive_path):
